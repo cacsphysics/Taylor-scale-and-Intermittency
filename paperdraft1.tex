@@ -32,8 +32,10 @@ preprint,%
 %author-numerical,%
 % Conference Proceedings
 ]{revtex4-1}
-
+%4 added pacakges
+\usepackage{physics}
 \usepackage{import}
+
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
@@ -85,12 +87,41 @@ Turbulent magnetic fluctuations are ubiquitous in both astrophysical and laborat
 
 \maketitle
 
+\section{For Whom am I writing for?}
+I am writing for new graduate students entering the field of plasma turbulence.\\
+
+\begin{figure}
+\includegraphics[width=0.65\textwidth]{Figures/fields/bfields_time_num20.pdf}% Here is how to import EPS art
+\caption{\label{fig:wave_psd} The magnetic fields measured at $z = 41.6cm$. The highlighted region is the analysis region.}
+\end{figure}
+
 What is the Taylor scale in a turbulent laboratory plasma?
+The Taylor scale in a turbulent laboratory plasma is $\sim4.6cm$.\\
+
 Does the Taylor scale correspond to dissipation features in the spectra?
+The Taylor scale corresponds to a steepening expected in dissipation.
+\begin{figure}
+\includegraphics[width=0.65\textwidth]{Figures/psd/pwr_den_k_interp_all_window_lmfit.pdf}% Here is how to import EPS art
+\caption{\label{fig:wave_psd} The $|\vb{B}|$ wavenumber power spectral density at three positions: $41.6cm$, $59.8cm$, and $78.0cm$. I used the Taylor scale to partition the wavenumber power spectral density into two regions. The spectral index steepens on average from $-3.2$ to $-5.0$.}
+\end{figure}
+\\
+
 Is intermittency observed in the magnetic fluctuations?
+Intermittency is present in the magnetic fluctuations.\\
+
+\begin{figure}
+\includegraphics[width=0.65\textwidth]{Figures/Intermittency_figs/new_avg_incr_hist_counts_0.2us_with_rand_p5.pdf}% Here is how to import EPS art
+\caption{\label{fig:intermit_0.2} The histogram of $0.2\mu s$ increments. The histogram deviates from a Gaussian histogram, $0.2\mu s$ increments from random data. This features indicates that intermittency is present in the magnetic fluctuations.}
+\end{figure}
+
+
 Is there spacial variation in intermittency?
+Intermittency does not appear to vary spatially statistically.\\
 
-
+\begin{figure}
+\includegraphics[width=0.65\textwidth]{Figures/Intermittency_figs/ensem_merge_kurt_10shot_range_all_with_rand_tscales.pdf}% Here is how to import EPS art
+\caption{\label{fig:kurtosis} The kurtosis measurements of various ensembles of increments, and at the three axial positions: $41.6cm$, $59.8cm$, and $78.0cm$. There is insignificant spatial variation of the kurtosis.}
+\end{figure}
 \bibliography{aipsamp}% Produces the bibliography via BibTeX.
 
 
