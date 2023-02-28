@@ -100,28 +100,45 @@ The Taylor scale in a turbulent laboratory plasma is $\sim4.6cm$.\\
 
 Does the Taylor scale correspond to dissipation features in the spectra?
 The Taylor scale corresponds to a steepening expected in dissipation.
+
+\section{Results}
+The spatial variation of the extracted Taylor scales is  (table~\ref{tab:table1}). Interpreting the Taylor scales as a dissipation scale this suggests that the dissipation mechanisms are at least axially homogeneous. 
+
+The curvatures at $z = 41.6cm$ is significantly different than the curvatures at the other locations, $59.8cm$ and $78.0cm$ (table~\ref{tab:table1}). This suggests the magnetic fluctuations exhibit rapid changes earlier in the chamber and relaxes as the plasma travels further down the chamber.
+\begin{table}
+\caption{\label{tab:table1} The shot-weighted averaged Taylor scales and Curvatures at the three axial positions.}
+\begin{ruledtabular}
+\begin{tabular}{ccc}
+Position ($cm$)&Taylor Scale ($cm$)&Curvature ($\mu s$)\\
+\hline
+$41.6$ & $4.4\pm0.9$ & $0.62\pm0.08$\\
+$59.8$ & $5\pm1$ & $0.9\pm0.2$\\
+$78.0$ & $4.6\pm0.7$ & $1.0\pm0.1$\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+
+I used the Taylor scale wavenumber ($k_T\sim\lambda_{T}$) to partition the wavenumber power spectral density (figure~\ref{fig:wave_psd}).
 \begin{figure}
-\includegraphics[width=0.65\textwidth]{Figures/psd/pwr_den_k_interp_all_window_lmfit.pdf}% Here is how to import EPS art
-\caption{\label{fig:wave_psd} The $|\vb{B}|$ wavenumber power spectral density at three positions: $41.6cm$, $59.8cm$, and $78.0cm$. I used the Taylor scale to partition the wavenumber power spectral density into two regions. The spectral index steepens on average from $-3.2$ to $-5.0$.}
+\includegraphics[width=0.65\textwidth]{Figures/psd/pwr_den_k_interpv2.pdf}% Here is how to import EPS art
+\caption{\label{fig:wave_psd} The $|\vb{B}|$ wavenumber power spectral density at three positions: $41.6cm$ (a), $59.8cm$ (b), and $78.0cm$ (c). I used the Taylor scale to partition the wavenumber power spectral density into two regions: [$0.03$, $0.15 cm^{-1}$] and [$0.3$, $1 cm^{-1}$]. The spectral index steepens on average from $-3.2\pm0.2$ to $-5.0\pm0.2$e.}
 \end{figure}
-\\
-
-Is intermittency observed in the magnetic fluctuations?
-Intermittency is present in the magnetic fluctuations.\\
-
+I find that the spectral index transitions from $-3.2\pm0.2$ to $-5.0\pm0.2$. The curvature also aligns with a index-transition of the frequency power spectral density (figure~\ref{fig:freq_psd}).
 \begin{figure}
-\includegraphics[width=0.65\textwidth]{Figures/Intermittency_figs/new_avg_incr_hist_counts_0.2us_with_rand_p5.pdf}% Here is how to import EPS art
-\caption{\label{fig:intermit_0.2} The histogram of $0.2\mu s$ increments. The histogram deviates from a Gaussian histogram, $0.2\mu s$ increments from random data. This features indicates that intermittency is present in the magnetic fluctuations.}
+\includegraphics[width=0.65\textwidth]{Figures/psd/pwr_den_f_all_window_lmfitv2.pdf}% Here is how to import EPS art
+\caption{\label{fig:freq_psd} The $|\vb{B}|$ frequency power spectral density at three positions: $41.6cm$ (a), $59.8cm$ (b), and $78.0cm$ (c). I used the position averaged curvatures to partition the frequency power spectral density into two regions: [$0.3$, $0.85MHz$] and [$2$, $5MHz$]. The spectral index steepens on average from $-3.4\pm 0.3$ to $-5.0\pm0.1$.}
 \end{figure}
+The frequency spectral index transitions between 
 
 
-Is there spacial variation in intermittency?
-Intermittency does not appear to vary spatially statistically.\\
 
-\begin{figure}
-\includegraphics[width=0.65\textwidth]{Figures/Intermittency_figs/ensem_merge_kurt_10shot_range_all_with_rand_tscales.pdf}% Here is how to import EPS art
-\caption{\label{fig:kurtosis} The kurtosis measurements of various ensembles of increments, and at the three axial positions: $41.6cm$, $59.8cm$, and $78.0cm$. There is insignificant spatial variation of the kurtosis.}
-\end{figure}
+
+
+
+
+
+
 \bibliography{aipsamp}% Produces the bibliography via BibTeX.
 
 
